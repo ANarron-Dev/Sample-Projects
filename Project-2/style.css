@@ -1,0 +1,23 @@
+a:link {color: purple;}
+a:visited {color: purple;}
+a:active {color: rgb(252, 94, 173);}
+body {
+  background-color: rgb(185, 222, 247);
+  font-family: comic sans ms, cursive, sans-serif;
+}
+h1 {
+  color: rgb(246, 28, 47);
+  text-align: center;
+}
+h2 {
+  color: rgb(221, 59, 81);
+}
+h3 {
+  color: rgb(242, 91, 91);
+}
+p {
+  color: rgb(242, 91, 91);
+}
+section {
+  color: rgb(242, 91, 91);
+}
