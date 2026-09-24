@@ -1,0 +1,9 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+  background-color: rgb(251, 240, 180);
+  font-family: comic sans ms, cursive, sans-serif;
+  color: rgb(84, 60, 60);
+}
