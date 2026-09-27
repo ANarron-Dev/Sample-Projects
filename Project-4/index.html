@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sorting Ceremony Questionnaire</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Sorting Ceremony Questionnaire</h1>
+      <p id="description">
+        Please submit your magical details to enroll for the upcoming term.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Magical Information</legend>
+          <label for="name" id="name-label">Name (required):</label>
+          <input type="text" id="name" name="name" placeholder="e.g., Harry Potter" required size="20">
+
+          <label for="email" id="email-label">Owl Post Address (required):</label>
+          <input
+            placeholder="chosenone@hogwarts.edu"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="number" id="number-label">Age (required):</label>
+          <input type="number" name="number" id="number" min="11" max="17" placeholder="11" />
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your blood status?</legend>
+          <input id="pure-blood" type="radio" name="blood-status" value="pure-blood" />
+          <label for="pure-blood">Pure-blood</label>
+          <input id="half-blood" type="radio" name="blood-status" value="half-blood" />
+          <label for="half-blood">Half-blood</label>
+          <input id="muggle-born" type="radio" name="blood-status" value="muggle-born" />
+          <label for="muggle-born">Muggle-born</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            What elective classes do you wish to take? (Select all that apply)
+          </legend>
+
+          <input checked type="checkbox" id="care-of-magical-creatures" name="choice" value="care-of-magical-creatures" />
+          <label for="care-of-magical-creatures">Care of Magical Creatures</label>
+
+          <input
+            type="checkbox" id="divination" name="choice" value="divination" />
+          <label for="divination">Divination</label>
+          
+          <input type="checkbox" id="study-of-ancient-runes" name="choice" value="study-of-ancient-runes" />
+          <label for="study-of-ancient-runes">Study of Ancient Runes</label>
+
+          <input
+            type="checkbox" id="arithmancy" name="choice" value="arithmancy" />
+          <label for="arithmancy">Arithmancy</label>
+          
+          <input type="checkbox" id="muggle-studies" name="choice" value="muggle-studies" />
+          <label for="muggle-studies">Muggle Studies</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>House</legend>
+
+          <label for="dropdown">Select your preferred house</label>
+
+          <select name="house" id="dropdown">
+            <option value="gryffindor">Gryffindor</option>
+            <option selected value="hufflepuff">Hufflepuff</option>
+            <option value="slytherin">Slytherin</option>
+            <option value="ravenclaw">Ravenclaw</option>
+            <option value="undecided">Undecided</option>
+          </select>
+        </fieldset>
+
+        <label for="comments">Any special dietary restrictions or owl-boarding requests?</label>
+        <br><textarea cols="30" rows="10" name="comments" id="comments" placeholder="e.g., I am bringing a toad, please provide extra flies..."></textarea>
+
+        <br><button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
