@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 100% !important;
+    }
+    .mobile-stack {
+      display: block !important;
+      width: 100% !important;
+      float: none !important;
+    }
+  }
+</style>
+
   <title>Welcome to Handcrafted & Co.</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
 
   <!-- Outer container table to center the email -->
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f4f4f4;">
+  <table role="presentation" class="container" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f4f4f4;">
     <tr>
       <td align="center" style="padding: 20px 0;">
         
         <!-- Main Email Body (Locked to 600px) -->
-        <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <table role="presentation" class="container" width="600" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
           
           <!-- HEADER: Brand Logo Space -->
           <tr>
@@ -36,7 +49,7 @@
           <!-- CALL TO ACTION (CTA) BUTTON -->
           <tr>
             <td align="center" style="padding: 20px 40px 40px 40px;">
-              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <table role="presentation" class="container" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                   <!-- Bulletproof Button Pattern -->
                   <td align="center" bgcolor="#7a5335" style="border-radius: 4px;">
@@ -58,7 +71,7 @@
     </h3>
 
     <!-- LEFT CARD (Width 260px) -->
-    <table role="presentation" width="260" cellspacing="0" cellpadding="0" border="0" align="left" style="margin-bottom: 20px;">
+    <table role="presentation" class="mobile-stack" width="260" cellspacing="0" cellpadding="0" border="0" align="left" style="margin-bottom: 20px;">
       <tr>
         <td style="background-color: #fcf9f6; padding: 20px; border-radius: 6px; text-align: center; font-family: Arial, sans-serif;">
           <!-- Placeholder Image Box -->
@@ -75,7 +88,7 @@
     </table>
 
     <!-- RIGHT CARD (Width 260px) -->
-    <table role="presentation" width="260" cellspacing="0" cellpadding="0" border="0" align="right" style="margin-bottom: 20px;">
+    <table role="presentation" class="mobile-stack" width="260" cellspacing="0" cellpadding="0" border="0" align="right" style="margin-bottom: 20px;">
       <tr>
         <td style="background-color: #fcf9f6; padding: 20px; border-radius: 6px; text-align: center; font-family: Arial, sans-serif;">
           <!-- Placeholder Image Box -->
