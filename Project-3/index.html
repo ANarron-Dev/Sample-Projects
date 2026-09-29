@@ -19,7 +19,7 @@
 <main>
     <h1>Small Batch Roasts. Bold Encounters.</h1>
     <h2>Ethically sourced, precision roasted, and delivered fresh to your doorstep.</h2>
-    <button>Explore Our Roasts</button>
+    <button class="cta-btn">Explore Our Roasts</button>
     <br><img src="photo.jpg" alt="A cup of coffee being poured" width="600">
 </main>
 <section id="one">
@@ -42,27 +42,52 @@
     </div>
   </div>  
 </section>
+<section class="testimonials-section">
+  <h2 class="section-title">✨ What Our Roasters Say</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p class="rating-stars">★★★★★</p>
+      <p class="testimonial-text">
+        "Midnight Velocity completely changed my mornings. The notes of cacao are rich without being bitter. Absolute perfection."
+      </p>
+      <h4 class="customer-name">— Marcus K., Richmond</h4>
+    </div>
+    <div class="testimonial-card">
+      <p class="rating-stars">★★★★★</p>
+      <p class="testimonial-text">
+        "The citrus undertones in Dawn Horizon are incredibly vibrant. It brews a clean, crisp cup that wakes you up flawlessly."
+      </p>
+      <h4 class="customer-name">— Sarah L., Denver</h4>
+    </div>
+    <div class="testimonial-card">
+      <p class="rating-stars">★★★★★</p>
+      <p class="testimonial-text">
+        "Highland Velvet is my go-to choice for an all-day drinker. Smooth body, rich aroma, and absolutely spectacular with a splash of oat milk."
+      </p>
+      <h4 class="customer-name">— David T., Austin</h4>
+    </div>
+
+  </div>
+</section>
+
 <section id="three">
-  <h3>Contact Us</h3>
-  <form action="myserver.com" method="POST">
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
-    </div>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
-    </div>
-    <div>
-      <label>Frequency:</label>
-<select>
-    <option>Weekly</option>
-    <option>Bi-weekly</option>
-    <option>Monthly</option>
-</select>
-    </div>
-    <button type="submit">Submit</button>
-  </form>
+  <h3>Subscribe to Our Newsletter</h3>
+<form action="https://web3forms.com" method="POST">
+  <input type="hidden" name="access_key" value="17242bce-6e44-42c4-bfd2-3a83e290c84c">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="Customer Name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="Customer Email" required>
+  <label for="frequency">Frequency:</label>
+  <select id="frequency" name="Delivery Preference">
+    <option value="Weekly">Weekly</option>
+    <option value="Bi-weekly">Bi-weekly</option>
+    <option value="Monthly">Monthly</option>
+  </select>
+  <button type="submit">Subscribe</button>
+
+</form>
+
 </section>
 </body>
 </html>

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family:Arial, Georgia, sans-serif;
     background-color: #dbd5ca;
@@ -78,4 +82,94 @@ img {
         gap: 15px;                  
     }
 }
+/* --- Testimonials Section Styling --- */
+.testimonials-section {
+  padding: 60px 20px;
+  background-color: #fcf9f6; /* Warm cream accent tone */
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  border: 1px solid #eeeeee;
+  text-align: left;
+  /* Smooth scale-up hover animation trick */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+/* Premium Hover Effect */
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(44, 29, 17, 0.05);
+}
+
+.rating-stars {
+  color: #7a5335; /* Warm roast tone */
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.testimonial-text {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.customer-name {
+  color: #2c1d11; /* Dark espresso primary tone */
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive breakpoint for small mobile views */
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    width: 100%; /* Stretch full width cleanly on smartphones */
+    max-width: 400px;
+  }
+}
+/* --- Main Hero Button Styling --- */
+.cta-btn {
+  display: inline-block;
+  background-color: #2c1d11; /* Dark espresso color */
+  color: #ffffff;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-top: 25px;
+  box-shadow: 0 4px 6px rgba(44, 29, 17, 0.1);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hero Button Interactive States */
+.cta-btn:hover {
+  background-color: #7a5335; /* Warm roast hover color */
+  transform: translateY(-2px);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
 
