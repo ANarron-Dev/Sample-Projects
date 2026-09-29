@@ -66,11 +66,12 @@ img {
     transition: color 0.3s ease;    
 }
 .nav-links a:hover {
-    color: #D4A373;      
+    color: #130a00; 
+    text-decoration: underline;     
 }
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;    /* Stacks the brand name on top of the links */
+        flex-direction: column;   
         gap: 15px;                 
         padding: 15px 20px;         
         text-align: center;

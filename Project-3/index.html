@@ -11,19 +11,19 @@
     <div class="nav-brand">Handcrafted & Co.</div>
     <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
+        <li><a href="#featured-roasts">Menu</a></li>
         <li><a href="#story">Our Story</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
     </ul>
 </nav>
 <main>
     <h1>Small Batch Roasts. Bold Encounters.</h1>
     <h2>Ethically sourced, precision roasted, and delivered fresh to your doorstep.</h2>
-    <button class="cta-btn">Explore Our Roasts</button>
+    <a href="#featured-roasts" class="cta-btn">Explore Our Roasts</a>
     <br><img src="photo.jpg" alt="A cup of coffee being poured" width="600">
 </main>
 <section id="one">
-    <h2>Our Story</h2>
+    <h2 id="story">Our Story</h2>
     <p>Founded in 2026, Handcrafted & Co, began with a simple mission: to bridge the gap between sustainable coffee farming and your morning mug. We partner directly with small-family farms to ensure fair wages and select only the highest-quality Arabica beans.
         <br>Every batch is micro-roasted to unlock its unique, geographic flavor profile.</p>
 </section>
@@ -31,7 +31,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
-        <h2>Featured Roasts</h2>
+        <h2 id="featured-roasts">Featured Roasts</h2>
         <h3>Midnight Velocity</h3>
         <p>Dark roast with notes of rich cacao and toasted brown sugar.</p>
         <h3>Dawn Horizon</h3>
@@ -71,8 +71,8 @@
 </section>
 
 <section id="three">
-  <h3>Subscribe to Our Newsletter</h3>
-<form action="https://web3forms.com" method="POST">
+  <h3 id="subscribe">Subscribe to Our Newsletter</h3>
+<form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="17242bce-6e44-42c4-bfd2-3a83e290c84c">
   <label for="name">Name:</label>
   <input type="text" id="name" name="Customer Name" required>
