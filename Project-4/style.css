@@ -99,6 +99,18 @@ button {
 button:hover {
   background-color: #fcd05a; 
 }
+/* Container for each radio + text pair */
+.radio-option {
+  display: flex;
+  align-items: center; /* Vertically centers the dot with the text */
+  margin-bottom: 12px;
+}
+
+.radio-option input[type="radio"] {
+  flex-shrink: 0;      /* Prevents the radio circle from getting squished */
+  margin-right: 10px;
+}
+
 .choice-group {
   display: inline-flex;
   align-items: center;
