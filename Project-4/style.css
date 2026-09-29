@@ -96,8 +96,16 @@ button {
   transition: background-color 0.2s ease;
   margin-top: 20px;
 }
-
-/* Subtle hover effect */
 button:hover {
-  background-color: #fcd05a; /* Brighter, glowing yellow on hover */
+  background-color: #fcd05a; 
+}
+.choice-group {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap; 
+  margin-right: 15px;  
+  margin-bottom: 10px; 
+}
+.choice-group input {
+  margin-right: 6px;
 }
